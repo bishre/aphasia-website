@@ -48,7 +48,7 @@ margin-right: auto;
 
 /*Back button*/
 
-a {
+#circle {
   background-color: #6c6ea0;
   text-decoration: none;
   border-radius: 50px;
@@ -57,13 +57,14 @@ a {
   width: 100px;
 }
 
-a::after {
+#circle::after {
   content:"\2190"; /*vaihtoehto: \2B05*/
   display: block;
   color: white;
   font-weight: bold;
   font-size: 80px;
   text-align: center;
+
 }
 
 /*About us*/
@@ -147,6 +148,7 @@ h2 {
   margin-left: 450px;
 }
 
+<<<<<<< HEAD
 #listeningGame {
     margin: 0 auto;
     width: 960px;
@@ -169,4 +171,18 @@ h2 {
   margin-left: 40px;
   text-align: center;
   padding: 30px;
+=======
+/*Listening games*/
+
+#game1,
+#game2,
+#game3 {
+  border-radius: 30px;
+  height: 250px;
+  width: 280px;
+  margin-top: 20px;
+  color: #6C6EA0;
+  border: 1px solid #6C6EA0;
+  font-size: 30px;
+>>>>>>> ed991c53b4e851a111b0529baa16bfa183bd2662
 }
