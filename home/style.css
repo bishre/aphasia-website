@@ -57,16 +57,23 @@ margin-right: auto;
   width: 100px;
 }
 
-#circle::after {
-  content:"\2190"; /*vaihtoehto: \2B05*/
-  display: block;
+/* #circle::after {
+  content:"\02190"; /*vaihtoehto: \2B05*/
+  /* display: block;
   color: white;
   font-weight: bold;
   font-size: 80px;
   text-align: center;
+} */
 
+span {
+  content: "\02190";
+  color: white;
+  margin: 5px 10px;
+  font-size: 80px;
+  padding-bottom: 10px;
+  text-align:
 }
-
 /*About us*/
 
 h2 {
