@@ -57,22 +57,12 @@ margin-right: auto;
   width: 100px;
 }
 
-/* #circle::after {
-  content:"\02190"; /*vaihtoehto: \2B05*/
-  /* display: block;
-  color: white;
-  font-weight: bold;
-  font-size: 80px;
-  text-align: center;
-} */
-
 span {
   content: "\02190";
   color: white;
   margin: 5px 10px;
   font-size: 80px;
   padding-bottom: 10px;
-  text-align:
 }
 /*About us*/
 
@@ -155,19 +145,6 @@ h2 {
   margin-left: 450px;
 }
 
-<<<<<<< HEAD
-#listeningGame {
-    margin: 0 auto;
-    width: 960px;
-    height: 165px;
-    background-color: white;
-    padding: 30px;
-    text-align: center;
-    color: #6C6EA0;
-    line-height: 94px;
-    font-size: 80px;
-}
-
 #readingGame1, #readingGame2, #readingGame3{
   width: 250px;
   height: 250px;
@@ -178,7 +155,6 @@ h2 {
   margin-left: 40px;
   text-align: center;
   padding: 30px;
-=======
 /*Listening games*/
 
 #game1,
@@ -191,5 +167,4 @@ h2 {
   color: #6C6EA0;
   border: 1px solid #6C6EA0;
   font-size: 30px;
->>>>>>> ed991c53b4e851a111b0529baa16bfa183bd2662
 }
