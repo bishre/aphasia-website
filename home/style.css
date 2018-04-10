@@ -64,7 +64,6 @@ margin-right: auto;
   font-weight: bold;
   font-size: 80px;
   text-align: center;
-
 }
 
 /*About us*/
@@ -153,6 +152,20 @@ h2 {
 #game1,
 #game2,
 #game3 {
+  border-radius: 30px;
+  height: 250px;
+  width: 280px;
+  margin-top: 20px;
+  color: #6C6EA0;
+  border: 1px solid #6C6EA0;
+  font-size: 30px;
+}
+
+/*Spelling games*/
+
+#game7,
+#game8,
+#game9 {
   border-radius: 30px;
   height: 250px;
   width: 280px;
