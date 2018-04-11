@@ -1,0 +1,27 @@
+h1,form{
+  text-align: center;
+}
+
+p{
+  font-size: 18px;
+}
+.level{
+  font-size: 18px;
+  text-align: center;
+  background: transparent;
+  border: 2px solid #ccc;
+  height: 34px;
+  width:200px;
+  margin:10px;
+}
+
+.start{
+  font-size: 18px;
+  text-align: center;
+  background: transparent;
+  border: 2px solid #ccc;
+  cursor: pointer;
+  height: 34px;
+  width:200px;
+
+}

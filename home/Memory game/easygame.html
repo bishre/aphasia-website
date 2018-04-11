@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Memory game easy level </title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="easygame.css" type="text/css" rel="stylesheet">
+
+
+</head>
+<body onload="init()">
+  <h1> Memory Game Easy Level </h1>
+
+   <button onclick="init()">Play Again</button>
+   <a href="mediumgame.html" type="button" id="nextlevel"> Next Level </a>
+
+
+  <p id="win"></p>
+
+  </br>
+
+  <table class="picture">
+  <tr>
+    <td><img  onclick="choose(0)"></td>
+    <td><img  onclick="choose(1)"></td>
+    <td><img  onclick="choose(2)"></td>
+  </tr>
+    <td><img   onclick="choose(3)"></td>
+    <td><img   onclick="choose(4)"></td>
+    <td><img   onclick="choose(5)"></td>
+  </tr>
+</table>
+
+
+
+
+<script src="easygame.js">
+
+</script>
+
+</body>
+</html>
