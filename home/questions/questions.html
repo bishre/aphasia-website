@@ -2,20 +2,29 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <script type="text/javascript" src="questions.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="questions.js"></script>
+    <link rel="stylesheet" href="questions.css">
     <title></title>
   </head>
   <body onload="play()">
 
+    <img id="logo" src="../logo.png" class="center" alt="Therapy For You" style="width:90px; height:120px; margin-left:40px; margin-left:45%">
+
+<div class="wholeThing">
 
     <div id="quiz"></div>
 
-    <button id="yes" type="button" onclick="result()">Yes</button>
-    <button id="no" type="button" onclick="result()">No</button>
-    <button type="button" onclick=next()>Next</button>
+    <button id="yesButton" type="button" value="Yes" onclick="result(this.value)">Yes</button>
+    <button id="noButton" type="button" value="No" onclick="result(this.value)">No</button>
 
     <div id="answer"></div>
+
+    <a id="goToGames" type="button" class="btn btn-default btn-block btn-lg" href="../games.landing.html">Go back to Games</a>
+</div>
 
   </body>
 </html>
