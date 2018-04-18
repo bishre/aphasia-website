@@ -1,0 +1,27 @@
+body {
+  font-family: 'Roboto';
+}
+
+#container {
+  width: 500px;
+  margin: 0 auto;
+  padding: 100px;
+
+}
+
+#options button {
+  width: 150px;
+  height: 100px;
+  font-size: 1.5em;
+}
+
+#controls button {
+  width: 100px;
+  height: 50px;
+}
+
+#controls {
+  width: 300px;
+  margin: 0 auto;
+  padding: 50px;
+}
