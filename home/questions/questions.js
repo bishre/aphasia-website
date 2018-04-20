@@ -67,9 +67,13 @@ function result(yesorno) {
       if(yesorno === myQuestions[counter].answer){
         document.getElementById("answer").innerHTML = myQuestions[counter].correctComment;
         document.getElementById("answer").style.color = "green";
+        document.getElementById("noButton").disabled = true;
+        document.getElementById("yesButton").disabled = true;
       } else {
         document.getElementById("answer").innerHTML = myQuestions[counter].comment;
         document.getElementById("answer").style.color = "red";
+        document.getElementById("noButton").disabled = true;
+        document.getElementById("yesButton").disabled = true;
       }
 
       setTimeout(toTheNext, 3000);
@@ -78,6 +82,8 @@ function result(yesorno) {
 
 
 function toTheNext(){
+  document.getElementById("noButton").disabled = false;
+  document.getElementById("yesButton").disabled = false;
   document.getElementById("answer").innerHTML = "";
 
   if(counter < myQuestions.length){
