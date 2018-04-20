@@ -3,25 +3,27 @@ var count=0;
 var first;
 var second;
 var numberChoosenCards=0;
-var back='great.png'
+var back='Images/great.png'
 
-cards[0]='tram.jpg';
-cards[1]='tram.jpg';
-cards[2]='car.jpg';
-cards[3]='car.jpg';
-cards[4]='bus.jpg';
-cards[5]='bus.jpg';
-cards[6]='bicycle.jpg';
-cards[7]='bicycle.jpg';
-cards[8]='train.jpg';
-cards[9]='train.jpg';
-cards[10]='airplane.jpg';
-cards[11]='airplane.jpg';
 
 function init(){
+  cards[0]='Images/tram.jpg';
+  cards[1]='Images/tram.jpg';
+  cards[2]='Images/car.jpg';
+  cards[3]='Images/car.jpg';
+  cards[4]='Images/bus.jpg';
+  cards[5]='Images/bus.jpg';
+  cards[6]='Images/bicycle.jpg';
+  cards[7]='Images/bicycle.jpg';
+  cards[8]='Images/train.jpg';
+  cards[9]='Images/train.jpg';
+  cards[10]='Images/airplane.jpg';
+  cards[11]='Images/airplane.jpg';
+
   shuffle();
   for (let i=0; i< cards.length; i++){
-    document.images[i].src=cards[i];
+    document.getElementsByClassName('a')[i].src=cards[i];
+    document.getElementById('win').innerHTML="";
   }
 }
 
@@ -36,37 +38,29 @@ function shuffle(){
   return cards;
 }
 
-function startTimer(){
-  s= setInterval(control,50);
-}
-
-function stopTimer(){
-  clearInterval(s);
-}
-
 
 function choose(index){
   if (numberChoosenCards==0){
     one=index;
-    document.images[index].src= cards[index];
+    document.getElementsByClassName('a')[index].src= cards[index];
     numberChoosenCards=1;
   }else{
     numberChoosenCards=2
     two=index;
-    document.images[index].src= cards[index];
-    startTimer();
+    document.getElementsByClassName('a')[index].src= cards[index];
+    control();
 
   }
 }
 
 function control(){
-  stopTimer();
+
   if (cards[one]==cards[two]){
   count++;
-  document.images[one].src=back;
-  document.images[two].src=back;
-  document.images[one].onclick="";
-  document.images[two].onclick="";
+  document.getElementsByClassName('a')[one].src=back;
+  document.getElementsByClassName('a')[two].src=back;
+  document.getElementsByClassName('a')[one].onclick="";
+  document.getElementsByClassName('a')[two].onclick="";
   document.getElementById('win').innerHTML= "Well-done. You got matched cards."
   numberChoosenCards=0;
   }
@@ -77,4 +71,8 @@ function control(){
 if (count==6){
  document.getElementById('win').innerHTML="Well-done. Do you want to you play again or move to the next level?";
   }
+}
+
+function reload(){
+  location.reload();
 }

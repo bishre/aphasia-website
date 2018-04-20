@@ -8,10 +8,18 @@
 
 </head>
 <body onload="init()">
-  <h1> Memory Game Medium Level </h1>
+  <div class="logo">
+  <img id="logo" src="Images/logo.png">
 
-  <button  onclick="init()">Play Again</button>
+
+  <h1> Medium Level </h1>
+</div>
+
+<div class="button">
+  <button  onclick="reload()">Play Again</button>
   <a href="hardgame.html" id="nextlevel"> Next Level </a>
+</div>
+
 
 
   <p id="win"></p>
@@ -20,21 +28,21 @@
 
   <table>
   <tr>
-    <td><img  onclick="choose(0)"></td>
-    <td><img  onclick="choose(1)"></td>
-    <td><img  onclick="choose(2)"></td>
-    <td><img  onclick="choose(3)"></td>
+    <td><img  class="a" onclick="choose(0)"></td>
+    <td><img  class="a" onclick="choose(1)"></td>
+    <td><img  class="a" onclick="choose(2)"></td>
+    <td><img  class="a" onclick="choose(3)"></td>
   </tr>
-    <td><img   onclick="choose(4)"></td>
-    <td><img   onclick="choose(5)"></td>
-    <td><img   onclick="choose(6)"></td>
-    <td><img   onclick="choose(7)"></td>
+    <td><img   class="a" onclick="choose(4)"></td>
+    <td><img   class="a" onclick="choose(5)"></td>
+    <td><img   class="a" onclick="choose(6)"></td>
+    <td><img   class="a" onclick="choose(7)"></td>
   </tr>
   <tr>
-    <td><img  onclick="choose(8)"></td>
-    <td><img  onclick="choose(9)"></td>
-    <td><img  onclick="choose(10)"></td>
-    <td><img  onclick="choose(11)"></td>
+    <td><img  class="a" onclick="choose(8)"></td>
+    <td><img  class="a" onclick="choose(9)"></td>
+    <td><img  class="a" onclick="choose(10)"></td>
+    <td><img  class="a" onclick="choose(11)"></td>
   </tr>
 </table>
 

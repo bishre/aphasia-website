@@ -3,7 +3,7 @@ body{
 }
 
 table,td{
-  border: 1px solid blue;
+  border: 1px solid #6B6D9E;
   margin-left: auto;
   margin-right: auto;
 }
@@ -12,27 +12,72 @@ img{
   height:160px;
   width:190px;
   display: block;
+  margin: 0;
+  padding: 0;
 }
 
 img:hover{
   opacity: 0.5;
 }
 
+body{
+  text-align: center;
+  background-color: #c1cad6;
+}
+
 #nextlevel{
   text-decoration: none;
-  border: 1px solid blue;
-  color: white;
-  background-color: blue;
+  border-radius: 10px;
+  border: 1px solid #6B6D9E;
+  color: #6B6D9E;
+  background-color: white;
   padding: 3px 3px 3px 3px;
   font-size:20px;
   font-family:sans-serif;
 }
 
+#nextlevel:hover{
+  opacity:0.5;
+}
+
 button{
-  color:white;
-  border:1px solid blue;
-  background-color: blue;
+  color:#6B6D9E;
+  border:1px solid #6B6D9E;
+  border-radius: 10px;
+  background-color: white;
   padding: 3px 3px 3px 3px;
   font-size: 20px;
   font-family:sans-serif;
+  cursor: pointer;
+}
+
+button:hover{
+  opacity:0.5;
+}
+
+.logo{
+  width:300px;
+  margin: 0 auto;
+}
+
+#logo{
+  width:70px;
+  height:100px;
+  float:left;
+}
+
+h1{
+  color:#6B6D9E;
+  padding-top: 20px;
+
+}
+
+.logo{
+  width:300px;
+  margin: 0 auto;
+}
+
+.button{
+  clear:both;
+  margin-left:70px;
 }

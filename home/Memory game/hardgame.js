@@ -2,23 +2,23 @@ var count=0;
 var one;
 var two;
 var numberChoosenCards=0;
-var back='openme.jpg';
+var back='Images/openme.jpg';
 
 var cards=[];
-cards[0]='toothbrush.jpg';
-cards[1]='toothbrush.jpg';
-cards[2]='toothpaste.jpg';
-cards[3]='toothpaste.jpg';
-cards[4]='mug.jpeg';
-cards[5]='mug.jpeg';
-cards[6]='alarm.jpg';
-cards[7]='alarm.jpg';
-cards[8]='soap.jpg';
-cards[9]='soap.jpg';
-cards[10]='towel.jpg';
-cards[11]='towel.jpg';
 
 function init(){
+  cards[0]='Images/toothbrush.jpg';
+  cards[1]='Images/toothbrush.jpg';
+  cards[2]='Images/toothpaste.jpg';
+  cards[3]='Images/toothpaste.jpg';
+  cards[4]='Images/mug.jpeg';
+  cards[5]='Images/mug.jpeg';
+  cards[6]='Images/alarm.jpg';
+  cards[7]='Images/alarm.jpg';
+  cards[8]='Images/soap.jpg';
+  cards[9]='Images/soap.jpg';
+  cards[10]='Images/towel.jpg';
+  cards[11]='Images/towel.jpg';
   shuffle();
 
 }
@@ -47,13 +47,13 @@ function stopTimer(){
 function choose(index){
   if (numberChoosenCards==0){
     one=index;
-    document.images[index].src=cards[index];
+    document.getElementsByClassName('a')[index].src=cards[index];
     numberChoosenCards=1;
 
   }else{
 
     two=index;
-    document.images[index].src=cards[index];
+    document.getElementsByClassName('a')[index].src=cards[index];
     numberChoosenCards=2;
     startTimer();
   }
@@ -65,14 +65,14 @@ stopTimer();
 if(cards[one]==cards[two]){
     count++;
     document.getElementById("win").innerHTML="Congratulation! U got matched cards"
-    document.images[one].onclick="";
-    document.images[two].onclick="";
+    document.getElementsByClassName('a')[one].onclick="";
+    document.getElementsByClassName('a')[two].onclick="";
     numberChoosenCards=0;
 
   }else if (cards[one]!== cards[two]){
    document.getElementById('win').innerHTML="Opps. It is unmatched. Try again";
-   document.images[one].src=back;
-   document.images[two].src=back;
+   document.getElementsByClassName('a')[one].src=back;
+   document.getElementsByClassName('a')[two].src=back;
    numberChoosenCards=0;
 
   }if (count===6){
