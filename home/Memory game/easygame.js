@@ -1,24 +1,22 @@
+var count=0;
+var back= 'Images/supereffort.png';
+var cards=[];
 var numberChoosenCards=0;
 var one;
 var two;
-var count=0;
-var back= 'supereffort.png';
-var cards=[];
-
-cards[0]='apple.jpg';
-cards[1]='kiwi.jpg';
-cards[2]='cherries.jpg';
-cards[3]='apple.jpg';
-cards[4]='kiwi.jpg';
-cards[5]='cherries.jpg';
-
-
 
 function init(){
+  cards[0]='Images/apple.jpg';
+  cards[1]='Images/kiwi.jpg';
+  cards[2]='Images/cherries.jpg';
+  cards[3]='Images/apple.jpg';
+  cards[4]='Images/kiwi.jpg';
+  cards[5]='Images/cherries.jpg';
+
   shuffle();
   for(let i=0; i<cards.length;i++){
-    document.images[i].src =cards[i];
-
+    document.getElementsByClassName('1')[i].src =cards[i];
+    document.getElementById('win').innerHTML="";
   }
 }
 
@@ -32,43 +30,46 @@ function init(){
   }
   return cards;
 }
-
+/*
 function startTimer(){
-  s=setInterval(control,50);
+  s=setInterval(control(one, two),50);
 }
 
 function stopTimer(){
   clearInterval(s);
-}
+}*/
 
 function choose(index){
+
   if (numberChoosenCards==0){
+
     one=index;
+
     // the pic we choose will be one of pic in array
-    document.images[index].src=cards[index];
+    document.getElementsByClassName('1')[index].src=cards[index];
     numberChoosenCards=1;
 
   }else{
     numberChoosenCards=2
     two=index;
-    document.images[index].src=cards[index];
-    startTimer();
+    document.getElementsByClassName('1')[index].src=cards[index];
+    control();
 
   }
 
 }
 
 function control(){
-  stopTimer();
+//  stopTimer();
 
   if (cards[one]== cards[two])
   {
     count++;
 
-    document.images[one].src= back;
-    document.images[two].src=back;
-    document.images[one].onclick="";
-    document.images[two].onclick="";
+    document.getElementsByClassName('1')[one].src= back;
+    document.getElementsByClassName('1')[two].src=back;
+    document.getElementsByClassName('1')[one].onclick="";
+    document.getElementsByClassName('1')[two].onclick="";
     document.getElementById('win').innerHTML= "Well-done. You got matched cards"
     numberChoosenCards=0;
 
@@ -85,4 +86,8 @@ function control(){
    {
   document.getElementById('win').innerHTML="Well-done. Do you want to you play again or move to the next level?";
    }
+}
+
+function reload(){
+  location.reload();
 }
