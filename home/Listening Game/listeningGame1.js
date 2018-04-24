@@ -1,8 +1,4 @@
 let x = 1;
-var wordList = ['dog', 'cat', 'cow', 'tiger', 'elephant', 'horse', 'frog', 'monkey', 'bird', 'goat'];
-var newList = [];
-var soundFile = "";
-var correctAnswer = "";
 function createNew(){
   var wordList = ['dog', 'cat', 'cow', 'tiger', 'elephant', 'horse', 'frog', 'monkey', 'bird', 'goat'];
   newList = [];
@@ -18,25 +14,12 @@ function createNew(){
   return newList, correctAnswer, soundFile;
 }
 
-// var questionList = questionArray[Math.floor(Math.random()*5)];
-
-
 function playAudio(){
   document.getElementById('audio').src = soundFile;
 }
 
-// var startGame = function(){
-//   startQuiz();
-// }
-
 var startQuiz = function(){
   createNew();
-  // playAudio();
-  // var questionList = questionArray[Math.floor(Math.random()*5)];
-  // var correctAnswer = questionList[Math.floor(Math.random()*3)];
-  // var soundFile=  "audio/"+correctAnswer+".mp3";
-  // var soundFile="audio/"+wordList[Math.floor(Math.random()*3)]+".mp3";
-  // document.getElementById('audio').src = soundFile;
   document.getElementById('audio').src = soundFile;
   for (let i=0; i<3; i++){
     btn = document.getElementsByClassName('results');
@@ -49,10 +32,6 @@ var startQuiz = function(){
 }
 function nextQ(){
   createNew();
-  // questionList = questionArray[Math.floor(Math.random()*5)];
-  // correctAnswer = newList[Math.floor(Math.random()*3)];
-  // soundFile=  "sounds/"+correctAnswer+".mp3";
-  // document.getElementById('audio').src = soundFile;
     document.getElementById('audio').src = soundFile;
     document.getElementById('result').innerHTML = "";
     for (let i=0; i<3;i++){
@@ -66,10 +45,14 @@ function nextQ(){
 function pickWord(){
   if (("sounds/"+this.innerHTML+".mp3")===soundFile){
     document.getElementById('result').innerHTML = 'Correct!'
-    document.getElementById('result').style.color = 'green';
+    setTimeout(document.getElementById('result').style.color = 'green', 100);
+    document.getElementById('success').src = "sounds/success.mp3";
+    // document.getElementsByClassName('results').style.background = 'green';
     setTimeout(nextQ, 1000);
   } else {
     document.getElementById('result').innerHTML = 'Wrong!'
     document.getElementById('result').style.color = 'red';
+    document.getElementById('success').src = "sounds/failure.mp3";
+    // document.getElementsByClassName('results').style.background = 'green';
   }
 }
