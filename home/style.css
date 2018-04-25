@@ -10,6 +10,19 @@ h1 {
   text-align:center;
 }
 
+/*Language buttons*/
+#suomi,
+#english {
+  width: 40px;
+  height: 15px;
+  border: 1px solid #6c6ea0;
+  border-radius: 5px;
+  background-color: white;
+  color: #6c6ea0;
+  padding: 5px;
+  margin-left: 30px;
+}
+
 #games-button,
 #order-button,
 #about-button,
@@ -20,6 +33,12 @@ h1 {
   border-radius: 30px;
   border-color: #6c6ea0;
   color: #6c6ea0;
+}
+
+/*footer*/
+footer {
+  text-align: center;
+  margin-top: 10px;
 }
 
 .center {
