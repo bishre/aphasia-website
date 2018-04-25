@@ -61,15 +61,15 @@ function control(){
   document.getElementsByClassName('a')[two].src=back;
   document.getElementsByClassName('a')[one].onclick="";
   document.getElementsByClassName('a')[two].onclick="";
-  document.getElementById('win').innerHTML= "Well-done. You got matched cards";
+  document.getElementById('win').innerHTML= "Hieno. Sinulla on samat kortit";
   numberChoosenCards=0;
   }
   else if (cards[one]!== cards[two]){
-  document.getElementById('win').innerHTML="Opps. It is unmatched. Try again";
+  document.getElementById('win').innerHTML="Väärä. Se ei ole sama korttia.Yritä uudellen";
   numberChoosenCards=0;
   }
 if (count==6){
- document.getElementById('win').innerHTML="Well-done. Do you want to you play again or move to the next level?";
+ document.getElementById('win').innerHTML="Haluatko pelaavan uudestaan vai siirtyäksesi seuraavalle tasolle?";
   }
 }
 

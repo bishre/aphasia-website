@@ -9,13 +9,16 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   <title>Document</title>
 </head>
-<body onload="startGame()">
+<body onload="startQuiz()">
   <div class="container">
     <img id="logo" src="../logo.png" class="center" alt="Therapy For You" align="center">
   </div>
 
   <div class="audio">
     <audio id="audio" src="" autoplay></audio>
+  </div>
+  <div>
+    <audio id="success" src="" autoplay></audio>
   </div>
 
   <div id="logo"<img src="image/sound-icon.png" alt=""></div>
@@ -32,7 +35,7 @@
     <div id="controls">
       <!-- <img src="../image/sound-icon.png" alt=""> -->
       <button onclick="playAudio()">Play Again</button>
-      <button onclick="skipThis()">Skip</button>
+      <button onclick="nextQ()">Skip</button>
     </div>
 
 

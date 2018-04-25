@@ -64,20 +64,21 @@ stopTimer();
 
 if(cards[one]==cards[two]){
     count++;
-    document.getElementById("win").innerHTML="Congratulation! U got matched cards"
+    document.getElementById("win").innerHTML="Hieno. Sinulla on samat kortit";
     document.getElementsByClassName('a')[one].onclick="";
     document.getElementsByClassName('a')[two].onclick="";
     numberChoosenCards=0;
 
   }else if (cards[one]!== cards[two]){
-   document.getElementById('win').innerHTML="Opps. It is unmatched. Try again";
+   document.getElementById('win').innerHTML="Väärä. Se ei ole sama korttia.Yritä uudellen";
    document.getElementsByClassName('a')[one].src=back;
    document.getElementsByClassName('a')[two].src=back;
    numberChoosenCards=0;
 
   }if (count===6){
-     document.getElementById('win').innerHTML="Well-done. Do you want to you play again?";
-  }
+     document.getElementById('win').innerHTML="Haluatko pelaavan uudestaan?";
+      }
+  
 
 }
 
