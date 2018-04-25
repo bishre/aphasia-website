@@ -1,0 +1,67 @@
+body {
+  background-color: #c1cad6;
+  padding-left: 50px;
+  color: #6c6ea0;
+}
+
+/*Logo*/
+.center {
+display: block;
+margin-left: auto;
+margin-right: auto;
+margin-bottom:20px;
+}
+
+input {
+  border-radius: 1px;
+}
+
+button {
+  border-radius: 1px;
+}
+
+#sketchpadapp {
+    /* Prevent nearby text being highlighted when accidentally dragging mouse outside confines of the canvas */
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    margin-left: 300px;
+}
+.leftside {
+    float:left;
+    width:300px;
+    height:433px;
+    background-color:#def;
+    padding:10px;
+    border-radius:5px;
+    border: 1px solid #6c6ea0;
+}
+
+.leftside p {
+  font-size: 18px;
+}
+
+.rightside {
+    float:left;
+    margin-left:10px;
+    background-color: white;
+}
+#sketchpad {
+    float:left;
+    border:2px solid #888;
+    border-radius:4px;
+    position:relative; /* Necessary for correct mouse co-ords in Firefox */
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 5px;
+  padding: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
