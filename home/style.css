@@ -3,6 +3,7 @@ body {
   background-color: #c1cad6;
   padding: 50px;
   color: #6c6ea0;
+
 }
 
 /*Home page*/
@@ -185,6 +186,8 @@ h2 {
   margin-top: 20px;
   text-align: center;
   font-size: 30px;
+  word-wrap: break-word;
+  white-space: normal;
 }
 
 /*Spelling games*/
