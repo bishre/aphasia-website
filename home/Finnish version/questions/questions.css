@@ -1,0 +1,43 @@
+body {
+  background-color: #c1cad6;
+  color: #6c6ea0;
+}
+
+.wholeThing {
+  margin: 10% 10%;
+  text-align:center;
+}
+
+#quiz {
+  font-size: 45px;
+}
+
+#yesButton {
+  padding: 40px;
+  margin-top: 20px;
+  font-size: 50px;
+  border-radius: 10px;
+  color: #6c6ea0;
+}
+
+#noButton {
+  padding: 40px;
+  margin-top: 20px;
+  margin-left: 50px;
+  font-size: 50px;
+  border-radius: 10px;
+  color: #6c6ea0;
+}
+
+#answer {
+  font-size: 30px;
+  margin-top: 20px;
+}
+
+#goToGames {
+  padding: 30px;
+  margin-top: 20px;
+  font-size: 40px;
+  border-radius: 30px;
+  color: #6c6ea0;
+}
