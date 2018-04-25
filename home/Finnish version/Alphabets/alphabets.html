@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title>Afasia - Piirrä aakkoset</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+  </head>
+<!-- Javascript for sketchpad from https://zipso.net/a-simple-touchscreen-sketchpad-using-javascript-and-html5/ -->
+
+
+<body onload="init()">
+
+<img id="logo" src="../logo.png" class="center" alt="Therapy For You" style="width:90px; height:120px">
+
+    <div id="sketchpadapp">
+        <div class="leftside">
+             <p>Piirrä aakkoset oikealla olevalle alustalle pitämällä hiiren vasenta näppäintä alhaalla.</br>
+             Suurenna kirjainmalli klikkaamalla sitä alta.</p>
+             <input type="submit" value="Clear Sketchpad" onclick="clearCanvas(canvas,ctx);">
+             <button type="button" onclick="showAll()">All alphabets</button>
+
+             <div id="grid-letters" class="grid-container">
+               <div class="1" onclick="hideAllExcept(0)">A</div>
+               <div class="1" onclick="hideAllExcept(1)">B</div>
+               <div class="1" onclick="hideAllExcept(2)">C</div>
+               <div class="1" onclick="hideAllExcept(3)">D</div>
+               <div class="1" onclick="hideAllExcept(4)">E</div>
+               <div class="1" onclick="hideAllExcept(5)">F</div>
+               <div class="1" onclick="hideAllExcept(6)">G</div>
+               <div class="1" onclick="hideAllExcept(7)">H</div>
+               <div class="1" onclick="hideAllExcept(8)">I</div>
+               <div class="1" onclick="hideAllExcept(9)">J</div>
+               <div class="1" onclick="hideAllExcept(10)">K</div>
+               <div class="1" onclick="hideAllExcept(11)">L</div>
+               <div class="1" onclick="hideAllExcept(12)">M</div>
+               <div class="1" onclick="hideAllExcept(13)">N</div>
+               <div class="1" onclick="hideAllExcept(14)">O</div>
+               <div class="1" onclick="hideAllExcept(15)">P</div>
+               <div class="1" onclick="hideAllExcept(16)">Q</div>
+               <div class="1" onclick="hideAllExcept(17)">R</div>
+               <div class="1" onclick="hideAllExcept(18)">S</div>
+               <div class="1" onclick="hideAllExcept(19)">T</div>
+               <div class="1" onclick="hideAllExcept(20)">U</div>
+               <div class="1" onclick="hideAllExcept(21)">V</div>
+               <div class="1" onclick="hideAllExcept(22)">W</div>
+               <div class="1" onclick="hideAllExcept(23)">X</div>
+               <div class="1" onclick="hideAllExcept(24)">Y</div>
+               <div class="1" onclick="hideAllExcept(25)">Z</div>
+               <div class="1" onclick="hideAllExcept(26)">Ä</div>
+               <div class="1" onclick="hideAllExcept(27)">Ö</div>
+            </div>
+
+                <div id="overflow">
+                    <p id="newLetter" style="font-size:200px; text-align:center"></p>
+                </div>
+        </div>
+
+        <div class="rightside">
+            <canvas id="sketchpad" height="430" width="400"></canvas>
+        </div>
+    </div>
+</body>
+</html>
