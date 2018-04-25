@@ -1,0 +1,50 @@
+#options {
+  width: 600;
+  height: 400;
+  margin: 0 auto;
+}
+#options div{
+  display: inline;
+  width: 100px;
+  height: 100px;
+}
+
+#options img {
+  border: 5px solid;
+}
+
+#options div:hover {
+  opacity: 0.5;
+}
+
+#container {
+  width: 750px;
+  margin: 0 auto;
+}
+
+#controls button {
+  margin: 1.5em;
+  width: 100px;
+  height: 50px;
+  border-radius: 10px;
+}
+
+#controls {
+  width: 300px;
+  margin: 0 auto;
+  padding: 50px;
+}
+
+#controls button:hover {
+  background: #82ce83;
+}
+.results {
+  border-radius: 15px;
+}
+
+#result {
+  width: 50px;
+  margin: 0 auto;
+  padding: 20px;
+  font-size: 3em;
+}
