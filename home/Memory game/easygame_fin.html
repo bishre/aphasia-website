@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Helppo Muistipeli </title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="easygame_fin.css" type="text/css" rel="stylesheet">
+
+
+</head>
+<body onload="init()">
+  <div class="logo">
+  <img id="logo" src="Images/logo.png">
+
+
+  <h1> Helppo Muistipeli </h1>
+</div>
+
+<div class="button">
+  <button onclick="reload()">Pelaa Uudestaan</button>
+  <a href="mediumgame_fin.html" type="button" id="nextlevel"> Seuraavalle Tasolle </a>
+</div>
+
+
+
+  <p id="win"></p>
+
+  </br>
+
+  <table class="picture">
+  <tr>
+    <td><img  class="1" onclick="choose(0)"></td>
+    <td><img  class="1" onclick="choose(1)"></td>
+    <td><img  class="1" onclick="choose(2)"></td>
+  </tr>
+    <td><img   class="1" onclick="choose(3)"></td>
+    <td><img   class="1" onclick="choose(4)"></td>
+    <td><img   class="1" onclick="choose(5)"></td>
+  </tr>
+</table>
+
+
+
+
+<script src="easygame_fin.js">
+
+</script>
+
+</body>
+</html>
