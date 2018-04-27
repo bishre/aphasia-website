@@ -5,16 +5,33 @@
   <meta charset="utf-8">
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="../style.css">
   <link href="hardgame.css" type="text/css" rel="stylesheet">
 
 </head>
 <body onload="init()">
-  <div class="logo">
-  <img id="logo" src="Images/logo.png">
+  <!-- <div class="logo">
+  <a href="..\index.html"><img id="logo" src="Images/logo.png"></a> -->
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-5">
+        <a id="circle" href="../memory.html"><span>&#8592;</span></a>
+        <p style="font-size:35px; text-align:left">BACK</p>
+      </div>
+
+      <div class="col-sm-7">
+        <a href="../index.html"><img id="logo" src="../logo.png" class="center" alt="Therapy For You" style="width:90px; height:120px; margin-left:40px" align="left"></a>
+      </div>
+
+    </div>
+  </div>
 
 
   <h1> Hard Level </h1>
-</div>
+<!-- </div> -->
 
 <div class="button">
   <button onclick="restart()">Play Again</button>
