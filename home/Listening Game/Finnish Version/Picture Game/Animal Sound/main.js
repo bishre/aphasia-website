@@ -10,7 +10,7 @@ function createNew(){
     wordList.splice(wordList.indexOf(word),1);
   }
   correctAnswer = newList[Math.floor(Math.random()*newList.length)];
-  soundFile=  "../sounds/"+correctAnswer+".mp3";
+  soundFile=  "./sounds/"+correctAnswer+".mp3";
   return newList, correctAnswer, soundFile;
 }
 
@@ -43,16 +43,16 @@ function nextQ(){
 
 function pickWord(){
   // document.getElementsByClassName('results').style.opacity = '0.5';
-  if (this.src===("file:///C:/Users/s1800094/Documents/aphasia-website/home/Listening%20Game%20FI/Picture%20Game/images/" + correctAnswer + ".jpg")){
+  if (this.src===("file:///C:/Users/s1800094/Documents/aphasia-website/home/Listening%20Game/Finnish%20Version/Picture%20Game/Animal%20Sound/images/" + correctAnswer + ".jpg")){
     document.getElementById('result').innerHTML = 'Correct!'
     setTimeout(document.getElementById('result').style.color = 'green', 100);
-    document.getElementById('success').src = "../sounds/success.mp3";
+    document.getElementById('success').src = "./sounds/success.mp3";
     // this.style.border = 'green';
     setTimeout(nextQ, 1000);
   } else {
     document.getElementById('result').innerHTML = 'Wrong!'
     document.getElementById('result').style.color = 'red';
-    document.getElementById('success').src = "../sounds/failure.mp3";
+    document.getElementById('success').src = "./sounds/failure.mp3";
     // document.getElementsByClassName('results').style.background = 'green';
   }
 }
