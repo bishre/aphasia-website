@@ -55,10 +55,10 @@ button:hover{
   opacity:0.5;
 }
 
-.logo{
+/* .logo{
   width:300px;
   margin: 0 auto;
-}
+} */
 
 #logo{
   width:70px;
@@ -75,7 +75,7 @@ h1{
 
 .button{
   clear:both;
-  margin-left:70px;
+  /* margin-left:70px; */
 }
 
 #win{
