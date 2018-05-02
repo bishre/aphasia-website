@@ -44,6 +44,7 @@ function choose(index){
     one=index;
     document.getElementsByClassName('a')[index].src= cards[index];
     numberChoosenCards=1;
+    clear();
   }else{
     numberChoosenCards=2
     two=index;
@@ -61,16 +62,21 @@ function control(){
   document.getElementsByClassName('a')[two].src=back;
   document.getElementsByClassName('a')[one].onclick="";
   document.getElementsByClassName('a')[two].onclick="";
-  document.getElementById('win').innerHTML= "Hieno. Sinulla on samat kortit";
+  document.getElementById('win').innerHTML= "Hienoa! Sinulla on samat kortit.";
   numberChoosenCards=0;
   }
   else if (cards[one]!== cards[two]){
-  document.getElementById('win').innerHTML="Väärä. Se ei ole sama korttia.Yritä uudellen";
+  document.getElementById('lose').innerHTML="Väärin! Se ei ole sama kortti. Yritä uudelleen.";
   numberChoosenCards=0;
   }
 if (count==6){
- document.getElementById('win').innerHTML="Haluatko pelaavan uudestaan vai siirtyäksesi seuraavalle tasolle?";
+ document.getElementById('win').innerHTML="Haluatko pelata uudestaan vai siirtyä seuraavalle tasolle?";
   }
+}
+
+function clear(){
+  document.getElementById("win").innerHTML="";
+  document.getElementById('lose').innerHTML="";
 }
 
 function reload(){

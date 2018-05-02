@@ -80,6 +80,13 @@ h1{
 }
 
 #win{
-    color:#6B6D9E;
+    color:green;
     font-size: 25px;
+    font-weight:bold;
+}
+
+#lose{
+  color:red;
+  font-size: 25px;
+  font-weight:bold;
 }
