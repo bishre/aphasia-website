@@ -44,6 +44,7 @@ function choose(index){
     one=index;
     document.getElementsByClassName('a')[index].src= cards[index];
     numberChoosenCards=1;
+    clear();
   }else{
     numberChoosenCards=2
     two=index;
@@ -65,12 +66,17 @@ function control(){
   numberChoosenCards=0;
   }
   else if (cards[one]!== cards[two]){
-  document.getElementById('win').innerHTML="Opps. It is unmatched. Try again";
+  document.getElementById('lose').innerHTML="Opps. It is unmatched. Try again";
   numberChoosenCards=0;
   }
 if (count==6){
  document.getElementById('win').innerHTML="Well-done. Do you want to you play again or move to the next level?";
   }
+}
+
+function clear(){
+  document.getElementById("win").innerHTML="";
+  document.getElementById('lose').innerHTML="";
 }
 
 function reload(){

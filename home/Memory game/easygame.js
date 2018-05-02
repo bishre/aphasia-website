@@ -41,6 +41,8 @@ function choose(index){
     // the pic we choose will be one of pic in array
     document.getElementsByClassName('1')[index].src=cards[index];
     numberChoosenCards=1;
+    clear();
+
 
   }else{
     numberChoosenCards=2
@@ -48,12 +50,12 @@ function choose(index){
     document.getElementsByClassName('1')[index].src=cards[index];
     control();
 
+
   }
 
 }
 
 function control(){
-//  stopTimer();
 
   if (cards[one]== cards[two])
   {
@@ -64,6 +66,8 @@ function control(){
     document.getElementsByClassName('1')[one].onclick="";
     document.getElementsByClassName('1')[two].onclick="";
     document.getElementById('win').innerHTML= "Well-done. You got matched cards";
+
+
     numberChoosenCards=0;
 
       }
@@ -71,7 +75,8 @@ function control(){
 
   else if (cards[one] !== cards[two])
    {
-    document.getElementById('win').innerHTML="Opps. It is unmatched. Try again";
+    document.getElementById('lose').innerHTML="Opps. It is unmatched. Try again";
+
     numberChoosenCards=0;
 
    }
@@ -79,6 +84,11 @@ function control(){
    {
   document.getElementById('win').innerHTML="Well-done. Do you want to you play again or move to the next level?";
    }
+}
+
+function clear(){
+  document.getElementById("win").innerHTML="";
+  document.getElementById('lose').innerHTML="";
 }
 
 function reload(){

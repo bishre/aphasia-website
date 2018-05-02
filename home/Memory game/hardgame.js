@@ -49,7 +49,7 @@ function choose(index){
     one=index;
     document.getElementsByClassName('a')[index].src=cards[index];
     numberChoosenCards=1;
-
+    clear();
   }else{
 
     two=index;
@@ -70,7 +70,7 @@ if(cards[one]==cards[two]){
     numberChoosenCards=0;
 
   }else if (cards[one]!== cards[two]){
-   document.getElementById('win').innerHTML="Opps. It is unmatched. Try again";
+   document.getElementById('lose').innerHTML="Opps. It is unmatched. Try again";
    document.getElementsByClassName('a')[one].src=back;
    document.getElementsByClassName('a')[two].src=back;
    numberChoosenCards=0;
@@ -79,6 +79,11 @@ if(cards[one]==cards[two]){
      document.getElementById('win').innerHTML="Well-done. Do you want to you play again?";
   }
 
+}
+
+function clear(){
+  document.getElementById("win").innerHTML="";
+  document.getElementById('lose').innerHTML="";
 }
 
 function restart(){
