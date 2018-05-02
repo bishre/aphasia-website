@@ -1,44 +1,44 @@
 var questions=[
   {
     question:"Which is a dolphin?",
-    alternatives:["dolphin.jpeg","lion.jpeg", "bear.jpeg"],
+    alternatives:["img/dolphin.jpeg","img/lion.jpeg", "img/bear.jpeg"],
     correct:0
 },
   {
     question:"Which is a cat?",
-    alternatives:["dog.jpg","walrus.jpg","cat.jpeg"],
+    alternatives:["img/dog.jpg","img/walrus.jpg","img/cat.jpeg"],
     correct:2
   },
   {
     question:"Which is a lion?",
-    alternatives:["bear.jpeg", "lion.jpeg", "dog.jpg"],
+    alternatives:["img/bear.jpeg", "img/lion.jpeg", "img/dog.jpg"],
     correct:1
   },
   {
     question:"Which is a reindeer?",
-    alternatives:["reindeer.jpg", "candle.jpg", "tuoli.jpg"],
-    correct:0
-  },
-  {
-    question:"Which is a car?",
-    alternatives:["joulupukki.jpg", "car.jpg", "vapp.jpg"],
-    correct:1
-  },
-  {
-    question:"Which is a cow?",
-    alternatives:["airplane.jpg", "cow.jpg", "ananas.jpg"],
-    correct:1
-  },
-  {
-    question:"Which is straberries?",
-    alternatives:["dog.jpg", "mansikka.jpg", "donuts.jpg"],
-    correct:1
-  },
-  {
-    question:"Which is a house?",
-    alternatives:["koti.jpg", "dolphin.jpeg", "door.jpg"],
-    correct:0
-  }
+  alternatives:["img/reindeer.jpg", "img/candle.jpg", "img/tuoli.jpg"],
+  correct:0
+},
+{
+  question:"Which is a car?",
+  alternatives:["img/joulupukki.jpg", "img/car.jpg", "img/vapp.jpg"],
+  correct:1
+},
+{
+  question:"Which is a cow?",
+  alternatives:["img/airplane.jpg", "img/cow.jpg", "img/ananas.jpg"],
+  correct:1
+},
+{
+  question:"Which is straberries?",
+  alternatives:["img/dog.jpg", "img/mansikka.jpg", "img/donuts.jpg"],
+  correct:1
+},
+{
+  question:"Which is a house?",
+  alternatives:["img/koti.jpg", "img/dolphin.jpeg", "img/door.jpg"],
+  correct:0
+}
 
 ];
 var correctAnswer=0;
