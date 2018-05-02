@@ -2,23 +2,33 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <title>Quiz</title>
   <link rel="stylesheet" href="style.css" type="text/css">
+  <link rel="stylesheet" href="../style.css" type="text/css">
 </head>
 
 <body  onload = "start()">
-  <img id="logo" src="../logo.png" class="center" alt="Therapy For You" align="center" style="width:90px; height:120px;">
+<div class= "container">
+
   <div class="row">
     <div class="col-sm-5">
       <a id="circle" href="../reading.html"><span>&#8592;</span></a>
-      <p style="font-size:20px" align= "left">BACK</p>
+      <p style="font-size:35px" align= "left">BACK</p>
     </div>
+    <div class="col-sm-7">
+  <a href="../index.html"><img id="logo" src="../logo.png" class="center" alt="Therapy For You" style="width:90px; height:120px; margin-left:40px" align="left"></a>
+</div>
+</div>
 
-  <div class = "container">
-
+  <div id = "game">
     <p id="question">Question</p>
     <div class= "answer" id = "status"></div>
-    <div id = "images"><table>
+    <div id = "images">
+    <table>
     <tc><td><img id="1" name="answers" onclick="choose(0)" ></td></tc>
 
     <tc><td><img id="2" name="answers" onclick="choose(1)"></td></tc>
@@ -26,6 +36,7 @@
     <tc><td><img id="3" name="answers" onclick="choose(2)" ></td></tc>
   </table>
   </div>
+</div>
 </div>
   <script src="quiz.js"></script>
 </body>
