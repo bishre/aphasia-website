@@ -37,7 +37,7 @@ function shuffle(){
 
 function startTimer(){
   // 1000= 1second waiting time before it flips back to 'openme' picture
-  s= setInterval(control,1000);
+  s= setInterval(control,500);
 }
 
 function stopTimer(){
@@ -78,7 +78,7 @@ if(cards[one]==cards[two]){
   }if (count===6){
      document.getElementById('win').innerHTML="Haluatko pelaavan uudestaan?";
       }
-  
+
 
 }
 
