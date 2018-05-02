@@ -1,0 +1,68 @@
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+.container div{
+  display: inline-block;
+  width: 100%;
+  height: 100px;
+}
+
+.container img {
+  border: 5px solid;
+}
+
+.container div:hover {
+  opacity: 0.5;
+}
+
+.container {
+  display: grid;
+  margin: 0 auto;
+  margin-bottom: 2em;
+}
+
+.controls button {
+  margin: 1.5em;
+  width: 100px;
+  height: 50px;
+  border-radius: 10px;
+}
+
+.controls {
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.controls button:hover {
+  background: #82ce83;
+}
+.results {
+  border-radius: 15px;
+}
+
+#result {
+  width: 50px;
+  margin: 0 auto;
+  padding: 20px;
+  font-size: 3em;
+}
+
+
+@media only screen and (max-width: 480px) {
+  .container div {
+    display: block;
+    float: left;
+  }
+  /* #options div {
+    grid-template-rows: 100px 100px 100px 50px 50px;
+    grid-template-columns: 80%;
+  } */
+/* #container {
+  grid-template-columns: 80%;
+} */
+}
+
+@media only screen and (min-width: 480px) and (max-width: 786px) {
+  
+}
