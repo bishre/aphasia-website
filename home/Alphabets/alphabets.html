@@ -8,21 +8,33 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <title>Aphasia - Draw the alphabets</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
     <script type="text/javascript" src="script.js"></script>
   </head>
 <!-- Javascript for sketchpad from https://zipso.net/a-simple-touchscreen-sketchpad-using-javascript-and-html5/ -->
 
 
 <body onload="init()">
+<div class="container">
+  <div class="row">
+    <div class="col-sm-5">
+      <a id="circle" href="../spelling.html"><span>&#8592;</span></a>
+      <p style="font-size:35px">BACK</p>
+    </div>
 
-<img id="logo" src="../logo.png" class="center" alt="Therapy For You" style="width:90px; height:120px">
+    <div class="col-sm-7">
+        <a href="../index.html"><img id="logo" src="../logo.png" class="center" alt="Therapy For You" style="width:90px; height:120px; margin-left:40px" align="left"></a>
+    </div>
+  </div>
+
+<!-- <img id="logo" src="../logo.png" class="center" alt="Therapy For You" style="width:90px; height:120px"> -->
 
     <div id="sketchpadapp">
         <div class="leftside">
              <p>Draw letters to the sketchpad on the right by holding down your mouse button.</br>
              Click the letter to see it bigger.</p>
-             <input type="submit" value="Clear Sketchpad" onclick="clearCanvas(canvas,ctx);">
-             <button type="button" onclick="showAll()">All alphabets</button>
+             <input type="submit" value="Clear sketchpad" onclick="clearCanvas(canvas,ctx);">
+             <button type="button" onclick="showAll()">Show all</button>
 
              <div id="grid-letters" class="grid-container">
                <div class="1" onclick="hideAllExcept(0)">A</div>
@@ -64,5 +76,6 @@
             <canvas id="sketchpad" height="400" width="400"></canvas>
         </div>
     </div>
+  </div>
 </body>
 </html>
