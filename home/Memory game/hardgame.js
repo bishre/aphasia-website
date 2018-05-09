@@ -37,7 +37,7 @@ function shuffle(){
 
 function startTimer(){
   // 1000= 1second waiting time before it flips back to 'openme' picture
-  s= setInterval(control,1000);
+  s= setInterval(compare,1000);
 }
 
 function stopTimer(){
@@ -59,24 +59,24 @@ function choose(index){
   }
 }
 
-function control(){
+function compare(){
 stopTimer();
 
 if(cards[one]==cards[two]){
     count++;
-    document.getElementById("win").innerHTML="Congratulation! U got matched cards"
+    document.getElementById("win").innerHTML="Congratulations! You got matched cards"
     document.getElementsByClassName('a')[one].onclick="";
     document.getElementsByClassName('a')[two].onclick="";
     numberChoosenCards=0;
 
   }else if (cards[one]!== cards[two]){
-   document.getElementById('lose').innerHTML="Opps. It is unmatched. Try again";
+   document.getElementById('lose').innerHTML="Oops. It is unmatched. Try again";
    document.getElementsByClassName('a')[one].src=back;
    document.getElementsByClassName('a')[two].src=back;
    numberChoosenCards=0;
 
   }if (count===6){
-     document.getElementById('win').innerHTML="Well-done. Do you want to you play again?";
+  document.getElementById('win').innerHTML="Well done. Do you want to you play again?";
   }
 
 }
