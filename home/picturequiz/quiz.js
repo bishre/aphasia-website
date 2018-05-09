@@ -19,26 +19,26 @@ var questions=[
     alternatives:["img/reindeer.jpg", "img/candle.jpg", "img/tuoli.jpg"],
     correct:0
   },
-  // {
-  //   question:"Which is a car?",
-  //   alternatives:["img/joulupukki.jpg", "img/car.jpg", "img/vapp.jpg"],
-  //   correct:1
-  // },
-  // {
-  //   question:"Which is a cow?",
-  //   alternatives:["img/airplane.jpg", "img/cow.jpg", "img/ananas.jpg"],
-  //   correct:1
-  // },
-  // {
-  //   question:"Which is straberries?",
-  //   alternatives:["img/dog.jpg", "img/mansikka.jpg", "img/donuts.jpg"],
-  //   correct:1
-  // },
-  // {
-  //   question:"Which is a house?",
-  //   alternatives:["img/koti.jpg", "img/dolphin.jpeg", "img/door.jpg"],
-  //   correct:0
-  // },
+  {
+    question:"Which is a car?",
+    alternatives:["img/joulupukki.jpg", "img/car.jpg", "img/vapp.jpg"],
+    correct:1
+  },
+  {
+    question:"Which is a cow?",
+    alternatives:["img/airplane.jpg", "img/cow.jpg", "img/ananas.jpg"],
+    correct:1
+  },
+  {
+    question:"Which is straberries?",
+    alternatives:["img/dog.jpg", "img/mansikka.jpg", "img/donuts.jpg"],
+    correct:1
+  },
+  {
+    question:"Which is a house?",
+    alternatives:["img/koti.jpg", "img/dolphin.jpeg", "img/door.jpg"],
+    correct:0
+  },
 
 
 ];
