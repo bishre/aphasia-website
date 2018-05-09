@@ -62,10 +62,20 @@ table {
   width: 200px;
   height: 200px;
   margin-left: 20px;
-
-
 }
 
-#row {
+p {
+  margin-top: 10px;
+}
 
+.btn  {
+ height: 50px;
+ width: 300px;
+ margin-top: 50px;
+ margin-left: 260px;
+ text-align: center;
+}
+
+div#status.answer {
+  margin: 20px;
 }
