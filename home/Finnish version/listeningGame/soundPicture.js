@@ -43,14 +43,14 @@ function nextQ(){
 
 function pickWord(){
   // document.getElementsByClassName('results').style.opacity = '0.5';
-  if (this.src===("file:///C:/Users/s1800094/Documents/aphasia-website/home/Finnish%20version/listeningGame/images/" + correctAnswer + ".jpg")){
-    document.getElementById('result').innerHTML = 'Correct!'
+  if (this.src===("file:///C:/Users/s1800094/Documents/aphasia-website/home/Listening%20Game/Finnish%20Version/images/" + correctAnswer + ".jpg")){
+    document.getElementById('result').innerHTML = 'Oikein!'
     setTimeout(document.getElementById('result').style.color = 'green', 100);
     document.getElementById('success').src = "./sounds/success.mp3";
     // this.style.border = 'green';
     setTimeout(nextQ, 1000);
   } else {
-    document.getElementById('result').innerHTML = 'Wrong!'
+    document.getElementById('result').innerHTML = 'Väärin!'
     document.getElementById('result').style.color = 'red';
     document.getElementById('success').src = "./sounds/failure.mp3";
     // document.getElementsByClassName('results').style.background = 'green';

@@ -3,16 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="./style.css">
   <link rel="stylesheet" href="spokenWord.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-  <title>Document</title>
+  <title>Listen the word</title>
 </head>
 <body onload="startQuiz()">
   <div class="container">
-    <a href="../index.html"><img id="logo" src="./logo.png" class="center" alt="Therapy For You" align="center"></a>
+    <div class="row">
+      <div class="col-sm-5">
+        <a id="circle" href="../listening.html"><span>&#8592;</span></a>
+        <p style="font-size:35px">BACK</p>
+      </div>
+
+    <div class="col-sm-7">
+    <a href="../index.html"><img id="logo" src="./logo.png" class="center" alt="Therapy For You" style="width:90px; height:120px; margin-left:40px" align="left"></a>
+    </div>
   </div>
+
 
   <div class="audio">
     <audio id="audio" src="" autoplay></audio>
@@ -37,11 +49,8 @@
       <button onclick="playAudio()">Play Again</button>
       <button onclick="nextQ()">Skip</button>
     </div>
-
-
-
   </div>
-
+</div>
   <script type="text/javascript" src="spokenWord.js">
 
   </script>
