@@ -1,0 +1,71 @@
+body {
+  background-color: #c1cad6;
+  padding: 50px;
+  color: #6c6ea0;
+  text-align: center;
+  font-size: 150%;
+  margin-top: 0px;
+  padding-top: 0px;
+}
+
+#circle {
+  background-color: #6c6ea0;
+  text-decoration: none;
+  border-radius: 50px;
+  display: block;
+  height: 70px;
+  width: 70px;
+  text-align: center;
+  margin: 0px;
+}
+
+span {
+  content: "\02190";
+  color: white;
+  margin: 0px;
+  font-size: 45px;
+  padding: 0px;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 5px;
+  padding-top: 50px;
+
+}
+
+div #answer{
+
+}
+
+#game {
+  border: solid 1px #6c6ea0;
+  width: 800px;
+  height: 420px;
+  background: #fff;
+  margin-left: 200px;
+  margin-top: 7px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+table {
+  margin-left: 50px;
+  margin-top: 50px;
+}
+
+ img {
+  border-radius: 8px;
+  border: 0px;
+  width: 200px;
+  height: 200px;
+  margin-left: 20px;
+
+
+}
+
+#row {
+
+}
