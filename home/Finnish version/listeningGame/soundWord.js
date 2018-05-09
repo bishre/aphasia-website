@@ -44,13 +44,13 @@ function nextQ(){
 
 function pickWord(){
   if (("sounds/"+this.innerHTML+".mp3")===soundFile){
-    document.getElementById('result').innerHTML = 'Correct!'
+    document.getElementById('result').innerHTML = 'Oikein!'
     setTimeout(document.getElementById('result').style.color = 'green', 100);
     document.getElementById('success').src = "sounds/success.mp3";
     // document.getElementsByClassName('results').style.background = 'green';
     setTimeout(nextQ, 1000);
   } else {
-    document.getElementById('result').innerHTML = 'Wrong!'
+    document.getElementById('result').innerHTML = 'Väärin!'
     document.getElementById('result').style.color = 'red';
     document.getElementById('success').src = "sounds/failure.mp3";
     // document.getElementsByClassName('results').style.background = 'green';
