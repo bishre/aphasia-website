@@ -1,25 +1,34 @@
-.container {
-  width: 100%;
+#back {
+  width: 40%;
+  float: left;
+  padding: 0;
+  margin: 0;
+}
+.header {
+  display: flex;
+  margin: 0 auto;
+  width: 40%;
+}
+.options {
+  width: 55%;
   margin: 0 auto;
 }
-.container div{
+
+.options div {
   display: inline-block;
-  width: 100%;
-  height: 100px;
 }
 
-.container img {
-  border: 5px solid;
-}
-
-.container div:hover {
-  opacity: 0.5;
-}
-
-.container {
-  display: grid;
+.controls {
   margin: 0 auto;
-  margin-bottom: 2em;
+}
+
+.controls div {
+  display: inline-block;
+}
+
+.controls {
+  width: 35%;
+  margin: 0 auto;
 }
 
 .controls button {
@@ -27,11 +36,6 @@
   width: 100px;
   height: 50px;
   border-radius: 10px;
-}
-
-.controls {
-  margin: 0 auto;
-  padding: 10px;
 }
 
 .controls button:hover {
@@ -50,8 +54,20 @@
 
 
 @media only screen and (max-width: 480px) {
-  .container div {
+  #back {
     display: block;
+    width: auto;
+    margin: 0 auto;
+  }
+  .header {
+    display: block;
+    width: auto;
+    margin: 0 auto;
+  }
+  .container .options {
+    width: auto;
+    display: block;
+    margin: 0 auto;
     float: left;
   }
   /* #options div {
@@ -60,9 +76,9 @@
   } */
 /* #container {
   grid-template-columns: 80%;
+}
 } */
-}
 
-@media only screen and (min-width: 480px) and (max-width: 786px) {
-  
-}
+/* @media only screen and (min-width: 480px) and (max-width: 786px) {
+
+} */

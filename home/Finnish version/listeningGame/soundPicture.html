@@ -10,8 +10,13 @@
   <title>Document</title>
 </head>
 <body onload="startQuiz()">
+  <div id="back" class="col-sm-5">
+    <a id="circle" href="index.html"><span>&#8592;</span></a>
+    <p style="font-size:35px">BACK</p>
+  </div>
   <div class="header">
-    <a href="../index.html"><img id="logo" src="./logo.png" class="center" alt="Therapy For You" align="center"></a>
+    <!-- <a href="../index.html"><img id="logo" src="./logo.png" class="center" alt="Therapy For You" align="center"></a> -->
+    <a href="index.html"><img id="logo" src="logo.png" class="center" alt="Therapy For You" style="width:90px; height:120px; margin-left:40px" align="left"></a>
   </div>
 
   <div class="audio">
@@ -35,12 +40,13 @@
         <p id="result"></p>
       </div>
       <div class="controls">
-        <button onclick="playAudio()">Uudestaan</button>
+        <div>
+          <button onclick="playAudio()">Uudestaan</button>
+        </div>
+        <div class="controls">
+          <button onclick="nextQ()">Ohita</button>
+        </div>
       </div>
-      <div class="controls">
-        <button onclick="nextQ()">Ohita</button>
-      </div>
-
   </div>
 
   <script type="text/javascript" src="soundPicture.js">
