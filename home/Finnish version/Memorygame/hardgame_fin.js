@@ -37,7 +37,7 @@ function shuffle(){
 
 function startTimer(){
   // 1000= 1second waiting time before it flips back to 'openme' picture
-  s= setInterval(control,500);
+  s= setInterval(control,200);
 }
 
 function stopTimer(){
