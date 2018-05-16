@@ -9,17 +9,54 @@ body {
 
 }
 
-#options button {
+#back {
+  width: 20%;
+  float: left;
+  padding: 0;
+  margin: 0;
+}
+
+.header {
+  display: flex;
+  margin: 0 auto;
+  width: 40%;
+}
+
+.options {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.options div {
+  display: inline-block;
+  margin: 0.5em;
+}
+
+.options button {
   width: 150px;
   height: 100px;
   font-size: 1.80em;
 }
 
-#options button:hover {
+.options div:hover {
   background: #afbced;
 }
+.controls div {
+  display: inline-block;
+}
 
-#controls button {
+.controls {
+  width: 35%;
+  margin: 0 auto;
+}
+
+.controls button {
+  margin: 1.5em;
+  width: 100px;
+  height: 50px;
+  border-radius: 10px;
+}
+.controls button {
   margin: 1.5em;
   width: 100px;
   height: 50px;
@@ -27,13 +64,13 @@ body {
   font-size: 1em;
 }
 
-#controls {
+.controls {
   width: 800px;
   margin: 0 auto;
   padding: 20px 100px;
 }
 
-#controls button:hover {
+.controls button:hover {
   background: #82ce83;
 }
 .results {
@@ -44,4 +81,36 @@ body {
   width: 280px;
   margin: 0 auto;
   font-size: 3em;
+}
+
+@media only screen and (max-width: 480px) {
+  #back {
+    display: block;
+    width: 60%;
+    float: right;
+    height: auto;
+  }
+
+  .header {
+    padding-bottom: 2em;
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  .options {
+    margin: 0 auto;
+    width: auto;
+    display: block;
+  }
+  .controls {
+    width: 90%;
+    padding: 0;
+    margin: 0 auto;
+  }
+  .controls div {
+    width: 100px;
+    display: block;
+    margin: 0 auto;
+  }
 }

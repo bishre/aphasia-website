@@ -1,5 +1,15 @@
+body {
+  font-family: 'Roboto';
+}
+
+#container {
+  width: 800px;
+  margin: 0px 250px;
+  padding: 100px 100px 0 100px;
+
+}
 #back {
-  width: 40%;
+  width: 20%;
   float: left;
   padding: 0;
   margin: 0;
@@ -10,16 +20,23 @@
   width: 40%;
 }
 .options {
-  width: 55%;
+  width: 60%;
   margin: 0 auto;
 }
 
 .options div {
   display: inline-block;
+  margin: 0.5em;
 }
 
-.controls {
-  margin: 0 auto;
+.options img {
+  width: 200px;
+  height: 200px;
+  border: 5px solid;
+}
+
+.options div:hover {
+  opacity: 0.5;
 }
 
 .controls div {
@@ -56,29 +73,24 @@
 @media only screen and (max-width: 480px) {
   #back {
     display: block;
-    width: auto;
-    margin: 0 auto;
+    width: 60%;
+    float: right;
+    height: auto;
   }
+
   .header {
+    padding-bottom: 2em;
     display: block;
-    width: auto;
+    width: 60%;
     margin: 0 auto;
   }
-  .container .options {
+  .options {
     width: auto;
     display: block;
     margin: 0 auto;
     float: left;
   }
-  /* #options div {
-    grid-template-rows: 100px 100px 100px 50px 50px;
-    grid-template-columns: 80%;
-  } */
-/* #container {
-  grid-template-columns: 80%;
+  .controls {
+    float: left;
+  }
 }
-} */
-
-/* @media only screen and (min-width: 480px) and (max-width: 786px) {
-
-} */

@@ -1,5 +1,15 @@
+body {
+  font-family: 'Roboto';
+}
+
+#container {
+  width: 800px;
+  margin: 0px 250px;
+  padding: 100px 100px 0 100px;
+}
+
 .options {
-  width: 55%;
+  width: 60%;
   margin: 0 auto;
 }
 
@@ -7,12 +17,23 @@
   display: inline-block;
 }
 
-.controls div {
-  display: inline-block;
+.options img {
+  margin: 10px;
+  width: 200px;
+  height: 200px;
+  border: 5px solid;
+}
+
+.options div:hover {
+  opacity: 0.5;
 }
 
 .controls {
-  width: 35%;
+  width: 30%;
+  margin: 0 auto;
+}
+.controls div {
+  display: inline-block;
   margin: 0 auto;
 }
 
