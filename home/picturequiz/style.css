@@ -27,12 +27,6 @@ span {
   padding: 0px;
 }
 
-/* h1 {
-  text-align: center;
-  margin-top: 5px;
-  padding-top: 50px;
-
-} */
 
 #game {
   border: solid 1px #6c6ea0;
@@ -43,7 +37,6 @@ span {
   margin-top: 7px;
   border-radius: 8px;
   margin-bottom: 10px;
-  /* font-weight: bold; */
   font-size: 30px;
 }
 
@@ -61,8 +54,6 @@ table {
 }
 
 h1  {
-  /* margin-top: 10px; */
-  /* padding-top: 20px; */
   font-size: 40px;
 }
 

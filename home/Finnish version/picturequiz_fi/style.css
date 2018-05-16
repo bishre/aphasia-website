@@ -27,17 +27,6 @@ span {
   padding: 0px;
 }
 
-h1 {
-  text-align: center;
-  margin-top: 5px;
-  padding-top: 50px;
-
-}
-
-div #answer{
-
-}
-
 #game {
   border: solid 1px #6c6ea0;
   width: 800px;
@@ -47,7 +36,6 @@ div #answer{
   margin-top: 7px;
   border-radius: 8px;
   margin-bottom: 10px;
-  font-weight: bold;
   font-size: 30px;
 }
 
@@ -64,8 +52,8 @@ table {
   margin-left: 20px;
 }
 
-p {
-  margin-top: 10px;
+h1{
+  font-size: 40px;
 }
 
 .btn  {
@@ -78,4 +66,5 @@ p {
 
 div#status.answer {
   margin: 20px;
+  font-weight: bold;
 }
