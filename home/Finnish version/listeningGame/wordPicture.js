@@ -43,7 +43,7 @@ function nextQ(){
 
 function pickWord(){
   // document.getElementsByClassName('results').style.opacity = '0.5';
-  if (this.src===("file:///C:/Users/s1800094/Documents/aphasia-website/home/Listening%20Game/Finnish%20Version/images/" + correctAnswer + ".jpg")){
+  if (this.getAttribute("src")===("./images/" + correctAnswer + ".jpg")){
     document.getElementById('result').innerHTML = 'Oikein!'
     setTimeout(document.getElementById('result').style.color = 'green', 100);
     document.getElementById('success').src = "./sounds/success.mp3";

@@ -23,7 +23,7 @@ body {
 }
 
 .options {
-  width: 60%;
+  width: 50%;
   margin: 0 auto;
 }
 
@@ -45,17 +45,6 @@ body {
   display: inline-block;
 }
 
-.controls {
-  width: 35%;
-  margin: 0 auto;
-}
-
-.controls button {
-  margin: 1.5em;
-  width: 100px;
-  height: 50px;
-  border-radius: 10px;
-}
 .controls button {
   margin: 1.5em;
   width: 100px;
@@ -65,7 +54,7 @@ body {
 }
 
 .controls {
-  width: 800px;
+  width: 50%;
   margin: 0 auto;
   padding: 20px 100px;
 }
